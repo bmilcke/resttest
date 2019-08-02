@@ -18,7 +18,7 @@
             <div class="row">
               <div class="col-md bg-secondary text-light shadow rounded m-1 p-3">
                 <h:outputText value="#{restAccess.today.date}">
-                  <f:convertDateTime dateStyle="full"/>
+                  <f:convertDateTime type="localDate"  dateStyle="full"/>
                 </h:outputText>
               </div>
             </div>
@@ -27,7 +27,7 @@
             <div class="row">
               <div class="col-md bg-secondary text-light shadow rounded m-1 p-3">
                 <h:outputText value="#{restAccess.today.time}">
-                  <f:convertDateTime timeStyle="long"/>
+                  <f:convertDateTime type="localTime" timeStyle="medium"/>
                 </h:outputText>
               </div>
             </div>
