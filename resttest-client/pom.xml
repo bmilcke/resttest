@@ -20,11 +20,6 @@
       <groupId>javax</groupId>
       <artifactId>javaee-api</artifactId>
     </dependency>
-    <dependency>
-      <groupId>org.eclipse</groupId>
-      <artifactId>yasson</artifactId>
-      <version>1.0.4</version>
-    </dependency>
   </dependencies>
 
 </project>
