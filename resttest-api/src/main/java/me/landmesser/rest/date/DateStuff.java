@@ -2,6 +2,7 @@ package me.landmesser.rest.date;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
@@ -19,4 +20,8 @@ public interface DateStuff {
     @GET
     @Path("/mytoday")
     MyDate now2();
+
+    @POST
+    @Path("diff")
+    long daysUntilToday(LocalDate date);
 }

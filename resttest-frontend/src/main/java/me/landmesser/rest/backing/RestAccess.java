@@ -11,9 +11,28 @@ import java.time.LocalDate;
 @RequestScoped
 public class RestAccess {
 
+    private LocalDate enteredDate = LocalDate.now();
+    private long diff;
+
     private DateStuffClient restClient = new DateStuffClient();
 
     public MyDate getToday() {
         return restClient.now2();
+    }
+
+    public LocalDate getEnteredDate() {
+        return enteredDate;
+    }
+
+    public void setEnteredDate(LocalDate enteredDate) {
+        this.enteredDate = enteredDate;
+    }
+
+    public void calcDiff() {
+        diff = restClient.daysUntilToday(enteredDate);
+    }
+
+    public long getDiff() {
+        return diff;
     }
 }
