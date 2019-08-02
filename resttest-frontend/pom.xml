@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>me.landmesser</groupId>
+    <artifactId>resttest</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>resttest-frontend</artifactId>
+  <packaging>war</packaging>
+
+  <dependencies>
+    <dependency>
+      <groupId>javax</groupId>
+      <artifactId>javaee-api</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>me.landmesser</groupId>
+      <artifactId>resttest-ejb</artifactId>
+      <type>ejb</type>
+    </dependency>
+
+    <dependency>
+      <!-- Bootstrap 4.3.1, JQuery 3.4.1-->
+      <groupId>org.butterfaces</groupId>
+      <artifactId>components</artifactId>
+      <version>3.1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>me.landmesser</groupId>
+      <artifactId>resttest-client</artifactId>
+    </dependency>
+  </dependencies>
+</project>
