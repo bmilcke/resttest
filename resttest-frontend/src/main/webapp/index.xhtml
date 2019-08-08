@@ -39,8 +39,8 @@
                   <f:convertDateTime type="localDate" dateStyle="medium" locale="de"/>
                 </b:text>
               </div>
-              <div class="col-md flex-column">
-                <b:commandLink value="Days till today" styleClass="btn btn-primary" action="#{restAccess.calcDiff}"/>
+              <div class="flex-column m-1 p-3">
+                <b:commandLink value="Days till today" styleClass="btn btn-success" action="#{restAccess.calcDiff}"/>
               </div>
               <div class="col-md-6 bg-success text-light shadow rounded m-1 p-3">
                 <h:outputText value="#{restAccess.diff}">
