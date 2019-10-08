@@ -29,7 +29,7 @@
       <!-- Bootstrap 4.3.1, JQuery 3.4.1-->
       <groupId>org.butterfaces</groupId>
       <artifactId>components</artifactId>
-      <version>3.1.1</version>
+      <version>3.1.2</version>
     </dependency>
     <dependency>
       <groupId>me.landmesser</groupId>
